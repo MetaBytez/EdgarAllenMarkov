@@ -50,6 +50,7 @@ class SyllableParrot(JSONParrot):
                     key: 1
                     for key in markov_chain.keys()
                 }
+                continue
             elif not syllable_map:
                 break
 
