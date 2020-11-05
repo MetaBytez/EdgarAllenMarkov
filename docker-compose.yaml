@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+    edgar:
+        build: .
+        env_file: ../.env
+        volumes:
+            - ./parrot.json:/app/parrot.json
+            - ./bot.log:/app/bot.log
+            - ../.env:/app/.env
